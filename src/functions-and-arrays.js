@@ -1,5 +1,19 @@
 // Iteration 1 | Find the Maximum
-function maxOfTwoNumbers() {}
+function maxOfTwoNumbers(number1, number2) {
+    let maxNumber;
+
+    if (number1 > number2) {
+        maxNumber = number1;
+    }
+    if (number2 > number1) {
+        maxNumber = number2;
+    } 
+    if (number1 === number2) {
+        maxNumber = number1 && number2;
+    }
+
+    return maxNumber;
+}
 
 
 
