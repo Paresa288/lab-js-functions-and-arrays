@@ -69,7 +69,20 @@ function sumNumbers(numbers) {
 // Iteration 4 | Numbers Average
 const numbers2 = [2, 6, 9, 10, 7, 4, 1, 9];
 
-function averageNumbers() {}
+function averageNumbers(numbers) {
+
+    console.log("running")
+    let average = 0;
+    
+    if (numbers.length !== 0) {
+        average = sumNumbers(numbers) / numbers.length;
+    }
+   
+
+    
+    console.log("return:", average)
+    return average;
+}
 
 
 
