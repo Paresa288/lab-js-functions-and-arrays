@@ -71,7 +71,7 @@ const numbers2 = [2, 6, 9, 10, 7, 4, 1, 9];
 
 function averageNumbers(numbers) {
 
-    console.log("running")
+    
     let average = 0;
     
     if (numbers.length !== 0) {
@@ -79,8 +79,6 @@ function averageNumbers(numbers) {
     }
    
 
-    
-    console.log("return:", average)
     return average;
 }
 
@@ -90,4 +88,17 @@ function averageNumbers(numbers) {
 // Iteration 5 | Find Elements
 const words2 = ["machine", "subset", "trouble", "starting", "matter", "eating", "truth", "disobedience"];
 
-function doesWordExist() {}
+function doesWordExist(words, word) {
+    let existingWord;
+
+    if (words.length === 0) {
+        return null;
+    }
+    if (words.includes(word)) {
+        existingWord = true;
+    } else {
+        return false;
+    }
+
+    return existingWord;
+}
